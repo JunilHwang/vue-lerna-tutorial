@@ -1,8 +1,24 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.20.2"
+  "scripts": {
+    "first:serve": "lerna run first:serve",
+    "first:build": "lerna run first:build",
+    "second:serve": "lerna run second:serve",
+    "second:build": "lerna run second:build"
   },
-  "workspaces": [ "projects/*" ]
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-typescript": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "lerna": "^3.20.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.8.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "vue-lerna-01": "file:projects\\vue-lerna-01",
+    "vue-lerna-02": "file:projects\\vue-lerna-02"
+  }
 }
